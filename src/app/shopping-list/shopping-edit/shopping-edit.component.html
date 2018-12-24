@@ -1,0 +1,31 @@
+<div fxLayout="row wrap" fxLayoutGap="20px" fxLayoutAlign="center">
+<div >
+
+    <mat-form-field appeareance="outline">
+      <mat-label>Name</mat-label>
+      <input
+        matInput placeholder="Name"
+      #NameInput>
+    </mat-form-field>
+
+
+</div>
+<div >
+
+  <mat-form-field appeareance="outline">
+    <mat-label>Amount</mat-label>
+    <input
+      matInput placeholder="Amount"
+    #AmountInput>
+
+  </mat-form-field>
+
+
+</div>
+  <div class="row button" >
+  <button mat-raised-button color="primary" (click)="onAddItem()"> Add</button>
+    <button mat-raised-button color="primary" (click)="onDelete"> delete</button>
+    <button mat-raised-button color="primary" (click)="onClear"> clear</button>
+  </div>
+
+</div>

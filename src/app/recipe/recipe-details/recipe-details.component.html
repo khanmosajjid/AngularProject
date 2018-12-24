@@ -1,0 +1,28 @@
+<div style="display: flex ;justify-content: center ;justify-items: center ; margin-top: 20px">
+  <mat-card >
+    <h1>
+      {{recipe.name}}
+
+    </h1>
+
+
+     <mat-toolbar>
+       <mat-toolbar-row>
+    <button mat-raised-button color="primary"  [matMenuTriggerFor]="manage">
+      Manage recipe
+      <mat-icon>expand_more</mat-icon>
+    </button>
+    <mat-menu #manage="matMenu" [overlapTrigger]="false">
+      <button mat-menu-item>description</button>
+      <button mat-menu-item>ingredients</button>
+    </mat-menu>
+       </mat-toolbar-row>
+     </mat-toolbar>
+    <img [src]="recipe.imagePath" alt={{recipe.name}} height="100px">
+    <p>{{recipe.description}}</p>
+    <p>ingredients</p>
+
+  </mat-card>
+
+
+</div>

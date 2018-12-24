@@ -1,0 +1,12 @@
+<div fxLayout="row wrap" fxLayoutGap="100px" fxLayoutAlign="center">
+
+  <app-recipe-list></app-recipe-list>
+  <app-recipe-details *ngIf="SelectedRecipe; else infotext"
+  [recipe]="SelectedRecipe"></app-recipe-details>
+  <ng-template #infotext>
+    <p>please select a recipe</p>
+  </ng-template>
+
+  </div>
+
+

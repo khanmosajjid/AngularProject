@@ -1,0 +1,14 @@
+<div fxLayout="row wrap" >
+
+  <mat-card class="cards"  fxLayout="row wrap">
+    <a href="#" (click)="onSelected()">
+      <h3>{{recipe.name}}</h3>
+      <p>{{recipe.description}}</p>
+      <img [src]="recipe.imagePath" height="100px">
+    </a>
+  </mat-card>
+
+  <div  style="display: flex; justify-content: center ;justify-items:  center">
+    <button mat-raised-button color="primary" style="display: flex">Add recipe</button>
+  </div>
+</div>

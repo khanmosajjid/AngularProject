@@ -1,0 +1,13 @@
+
+<div fxLayout="column wrap" fxLayoutGap="50px" fxLayoutAlign="space-around center">
+<div>
+  <app-shopping-edit (ingredientAdded)="onIngredientAdded($event)"></app-shopping-edit>
+</div>
+<div fxLayout="column wrap" fxLayoutGap="20px" fxLayoutAlign="space-around center">
+  <mat-card class="mat-card" *ngFor="let ingredient of ingredients" style="width: 300px">
+      <p> {{ingredient.name}}({{ingredient.amount}})</p>
+    </mat-card>
+
+
+</div>
+</div>
